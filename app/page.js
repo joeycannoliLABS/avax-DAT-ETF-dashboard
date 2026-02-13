@@ -466,12 +466,9 @@ export default function Dashboard() {
               marginBottom: 8,
             }}
           >
-            <img
-              src="https://images.ctfassets.net/gcj8jwzm6086/4MsHOocqH6mxjgpMKBih3f/a4c1d2e2add3ce35af8e498e221c1375/Avalanche_Horizontal_Red.svg"
-              alt="Avalanche"
-              style={{ height: 36 }}
-              onError={(e) => { e.target.style.display = 'none'; }}
-            />
+            <svg viewBox="0 0 254 254" style={{ height: 42, width: 42 }} fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="254" height="254" rx="42" fill="#E84142"/>
+              <path d="M171.8 170.29h30.07c3.72 0 5.59 0 6.85-.72 1.42-.82 2.29-2.15 2.88-3.7.56-1.38.56-3.15.56-6.68 0-3.54 0-5.3-.56-6.69-.59-1.54-1.46-2.87-2.88-3.69-1.26-.72-3.13-.72-6.85-.72h-9.16c-1.86 0-2.79 0-3.42-.36-.71-.41-1.15-1.08-1.44-1.85-.28-.69-.28-1.58-.28-3.34v0c0-1.77 0-2.65.28-3.35.29-.77.73-1.43 1.44-1.84.63-.37 1.56-.37 3.42-.
             <h1
               style={{
                 fontSize: 26,
