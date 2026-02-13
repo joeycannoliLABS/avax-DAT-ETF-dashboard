@@ -24,21 +24,49 @@ const DATS = [
     logo: "\u{1F3D4}\u{FE0F}"
   },
   {
+    id: "deft",
+    name: "DeFi Technologies",
+    ticker: "DEFT",
+    exchange: "NASDAQ",
+    avaxHoldings: 398321,
+    stakingPct: null,
+    sponsorFee: null,
+    status: "Live",
+    description: "Fintech company bridging traditional capital markets with DeFi. Operates Valour (102 ETPs), Stillman execution desk, and holds a multi-asset digital treasury including AVAX.",
+    highlights: [
+      "398,321 AVAX held in treasury (~$7.3M at current prices)",
+      "102 ETPs listed globally via Valour subsidiary",
+      "$165.7M in cash + digital asset treasury (as of Q3 2025)",
+      "$138.2M net inflows in 2025 (record year)",
+      "~$80M revenue and $39M operating income through Q3 2025",
+      "Expanded to Brazil (B3 exchange) in Dec 2025",
+      "UK FCA approval for retail crypto ETPs (Jan 2026)",
+      "Zero debt; $44M in venture investments"
+    ],
+    color: "#10B981",
+    logo: "\u{1F4B9}"
+  },
+  {
     id: "avat-treasury",
-    name: "Avalanche Foundation Treasury Co.",
-    ticker: "AVAT (expected)",
-    exchange: "NASDAQ (planned)",
+    name: "Avalanche Treasury Co.",
+    ticker: "AVAT (via MLAC)",
+    exchange: "NASDAQ (Q1 2026)",
     avaxHoldings: null,
     aum: 460000000,
     sponsorFee: null,
-    status: "Filed Oct 2025 / Pre-Launch",
-    description: "Avalanche Foundation planned $1B raise for two treasury companies. AVAT filed Oct 2025 with ~$460M initial AUM, targeting $1B via structured products.",
+    status: "SPAC Merger / Q1 2026 Listing",
+    description: "$675M SPAC merger with Mountain Lake Acquisition Corp (MLAC). Initial $200M AVAX purchase at discount with 18-month priority rights from Avalanche Foundation. Targeting $1B+ in AVAX holdings post-listing.",
     highlights: [
-      "Foundation raising $1B for two treasury cos",
-      "AVAX purchased at discounted price from Foundation",
-      "Initial $460M AUM targeting $1B",
-      "0.77x mNAV pricing noted",
-      "To trade on NASDAQ"
+      "$675M business combination with MLAC (Nasdaq)",
+      "$200M initial AVAX purchased at 0.77x mNAV (23% discount)",
+      "18-month priority on Avalanche Foundation sales to US DATs",
+      "$460M in treasury assets at closing",
+      "Target: $1B+ in AVAX holdings post-listing",
+      "CEO: Bart Smith (ex-Susquehanna)",
+      "Advisors: Emin Gun Sirer, Stani Kulechov (Aave), Haseeb Qureshi (Dragonfly)",
+      "Backers: Dragonfly, ParaFi, VanEck, Galaxy Digital, Pantera, Kraken, CoinFund",
+      "FalconX for execution; Monarq as asset manager",
+      "3 pillars: protocol investments, enterprise partnerships, validator infrastructure"
     ],
     color: "#F59E0B",
     logo: "\u{1F3DB}\u{FE0F}"
@@ -414,3 +442,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
