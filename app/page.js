@@ -466,22 +466,12 @@ export default function Dashboard() {
               marginBottom: 8,
             }}
           >
-            <div
-              style={{
-                width: 48,
-                height: 48,
-                borderRadius: 12,
-                background: "linear-gradient(135deg, #E84142, #ff6b6b)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 24,
-                fontWeight: 700,
-                color: "#fff",
-              }}
-            >
-              ◆
-            </div>
+            <img
+              src="https://images.ctfassets.net/gcj8jwzm6086/4MsHOocqH6mxjgpMKBih3f/a4c1d2e2add3ce35af8e498e221c1375/Avalanche_Horizontal_Red.svg"
+              alt="Avalanche"
+              style={{ height: 36 }}
+              onError={(e) => { e.target.style.display = 'none'; }}
+            />
             <h1
               style={{
                 fontSize: 26,
