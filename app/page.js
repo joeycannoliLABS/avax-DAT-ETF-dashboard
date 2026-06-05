@@ -955,7 +955,7 @@ export default function Dashboard() {
   var ss = useState(null), selected = ss[0], setSelected = ss[1];
   var us = useState(null), lastUpdate = us[0], setLastUpdate = us[1];
   var crs = useState(null), circ = crs[0], setCirc = crs[1];
-  var avxS = useState(13972000), avxHoldings = avxS[0], setAvxHoldings = avxS[1];
+  var avxS = useState(14009000), avxHoldings = avxS[0], setAvxHoldings = avxS[1];
   var darkS = useState(true), isDark = darkS[0], setIsDark = darkS[1];
   var newsS = useState([]), liveNews = newsS[0], setLiveNews = newsS[1];
   var vavxS = useState(null), vavxData = vavxS[0], setVavxData = vavxS[1];
@@ -974,7 +974,7 @@ export default function Dashboard() {
           setPrice(8.86); setPriceChange(-1.5); setMktCap(3827000000); setVol24(261000000); setCirc(431770000);
           setLastUpdate(new Date()); setErr("Using cached data"); setLoading(false);
         });
-      fetch("/api/avax-holdings").then(function(r) { return r.json(); }).then(function(d) { if (d.avaxOne) setAvxHoldings(d.avaxOne); }).catch(function() {});
+      fetch("/api/avax-holdings").then(function(r) { return r.json(); }).then(function(d) { /* Blueprint override disabled - using manual value */ }).catch(function() {});
       fetch("/api/avax-news").then(function(r) { return r.json(); }).then(function(d) { if (d.articles && d.articles.length > 0) setLiveNews(d.articles); }).catch(function() {});
     }
     fetchData();
